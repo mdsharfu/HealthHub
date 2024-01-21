@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="I am meditation" content="Meditation and Affirmations for Children and Grown ups" />
+      <meta property="og:image" content="wireframes/screenshots/media-player2.png" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+      <link rel="stylesheet" href="assets//css/style.css">
+      <link rel="icon" type="img/png" href="assets/images/favicon.png">
+      <title>I am...Meditation & Affirmations</title>
+   </head>
+   <body>
+      <nav class="navbar fixed-top navbar-light">
+         <!-- <a class="navbar-brand"><img src="assets/images/meditation-logo.png" alt="logo"></a> -->
+         <!-- <a href="#" data-toggle="modal" data-target="#meditationModal" id=modal> <i class="far fa-question-circle"></i></a> -->
+      </nav>
+      <div>
+         <video id="bg-img" autoplay muted loop playsinline>
+            <source src="assets/videos/meditation-video1.mp4" type="video/mp4">
+         </video>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="meditationModal" tabindex="-1" role="dialog" aria-labelledby="meditationModal" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title"><b>Welcome to "I Am...Meditation & Affirmation"</b></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p>This is a family friendly meditation/affirmation site designed for both adults and children. It is a space to come to when you need to take some time out of your day to re-center and re-focus yourself.</p>
+                  <p>In those moments when you or your children are feeling off balance and off kilter with life. Taking two minutes out of the day can really make a difference.</p>
+                  <h3 class ="title">First Step:</h3>
+                  <p>Choose your meditation space and affirmation by pressing the previous or next buttons on the media player.</p>
+                  <img src="wireframes/screenshots/media-player.png" alt="choose your space example 1" class="modal-image">
+                  <img src="wireframes/screenshots/media-player2.png" alt="choose your space example 2" class="modal-image">
+                  <h3 class ="title">Next Step:</h3>
+                  <p>Set your timer, press the play button and relax...</p>
+                  <img src="wireframes/screenshots/ux-timing.png" alt="set your timer" class="modal-image">
+                  <p>This is best experienced with headphones on but please don't let it stop you from meditating whenever you need to. It's not a requirement. There's also a mute button if you would rather not have the sound on.</p>
+                  <p>***feel free to share with friends and family using the share button on right side of screen.***</p>
+               </div>
+               <div class="modal-footer">
+                   <h3 class ="title">Namaste!</h3>
+                  <i><u>meaning:</u> The light in me, honours the light in you.</i>                
+                  <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row justify-content-md-center">
+            <div class="col-sm-4">
+               <h3 id ="affirmation-title">Affirmation:</h3>
+            </div>
+            <div class="col-sm-8">
+               <h3 id="affirmation">"I CAN DO HARD THINGS"</h3>
+            </div>
+         </div>
+         <div class="media-player row justify-content-md-around" id="mediaPlayer">
+            <audio id="audio" src="assets/sounds/Abundance.mp3"> </audio>
+            <a href="#" id="back"> <i class="fas fa-step-backward"></i> </a>
+            <a href="#" id="play"> <i class="fas fa-play"></i> </a>
+            <a href="#" id="forward"> <i class="fas fa-step-forward"></i> </a>
+         </div>
+         <div class="time-selector row justify-content-md-center" id="timeSelect">
+            <button type="button" class="btn btn-outline-info" data-time="120">2 Mins</button>
+            <button type="button" class="btn btn-outline-info" data-time="300">5 Mins</button>
+            <button type="button" class="btn btn-outline-info" data-time="600">10 Mins</button>
+            <a href="#" id="soundOn"><i class="fas fa-volume-up"></i></a>
+         </div>
+         <div class="row justify-content-md-center">
+            <div class="col-sm-12">
+               <h3 class="timer-countdown text-center" id ="timerCountdown">10:00</h3>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60db3b75bf2cb92f"></script>
+   </body>
+</html>
